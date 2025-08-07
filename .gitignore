@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# pnpm
+pnpm-workspace-state.json
+
+# node_modules
+node_modules
+
+# dist
+dist
