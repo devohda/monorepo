@@ -1,7 +1,35 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import { analyzer } from "vite-bundle-analyzer";
+import rollupAnalyzer from "rollup-plugin-analyzer";
+import react from "@vitejs/plugin-react";
+import { writeFileSync } from "fs";
+import { join } from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+	build: {
+		sourcemap: true, // 소스맵 생성
+		rollupOptions: {
+			plugins: [
+				rollupAnalyzer({
+					summaryOnly: false,
+					limit: 20,
+					hideDeps: false,
+					showExports: true,
+					writeTo: (analysis: string) => {
+						// dist 폴더에 bundle-analysis.txt 파일로 저장
+						const outputPath = join(
+							process.cwd(),
+							"dist",
+							"bundle-analysis.txt"
+						);
+						writeFileSync(outputPath, analysis, "utf8");
+
+						console.log(`📊 Bundle analysis saved to: ${outputPath}`);
+					},
+				}),
+			],
+		},
+	},
+	plugins: [react(), analyzer({})],
+});

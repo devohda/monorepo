@@ -10,6 +10,12 @@ importers:
 
   apps/demo-react:
     dependencies:
+      '@monorepo/react':
+        specifier: workspace:*
+        version: link:../../packages/react
+      '@monorepo/vite-plugin':
+        specifier: workspace:*
+        version: link:../../packages/vite-plugin
       react:
         specifier: ^19.1.1
         version: 19.1.1
@@ -20,6 +26,9 @@ importers:
       '@eslint/js':
         specifier: ^9.32.0
         version: 9.33.0
+      '@types/node':
+        specifier: ^24.2.1
+        version: 24.2.1
       '@types/react':
         specifier: ^19.1.9
         version: 19.1.9
@@ -28,7 +37,7 @@ importers:
         version: 19.1.7(@types/react@19.1.9)
       '@vitejs/plugin-react':
         specifier: ^4.7.0
-        version: 4.7.0(vite@7.1.1)
+        version: 4.7.0(vite@7.1.1(@types/node@24.2.1))
       eslint:
         specifier: ^9.32.0
         version: 9.33.0
@@ -41,6 +50,9 @@ importers:
       globals:
         specifier: ^16.3.0
         version: 16.3.0
+      rollup-plugin-analyzer:
+        specifier: ^4.0.0
+        version: 4.0.0
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
@@ -49,7 +61,10 @@ importers:
         version: 8.39.0(eslint@9.33.0)(typescript@5.8.3)
       vite:
         specifier: ^7.1.0
-        version: 7.1.1
+        version: 7.1.1(@types/node@24.2.1)
+      vite-bundle-analyzer:
+        specifier: ^1.2.0
+        version: 1.2.0
 
   packages/react:
     dependencies:
@@ -59,7 +74,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.7.0(vite@7.1.1)
+        version: 4.7.0(vite@7.1.1(@types/node@24.2.1))
       react:
         specifier: ^19.0.0
         version: 19.1.1
@@ -68,10 +83,10 @@ importers:
         version: 19.1.1(react@19.1.1)
       vite:
         specifier: ^7.0.0
-        version: 7.1.1
+        version: 7.1.1(@types/node@24.2.1)
       vite-plugin-dts:
         specifier: ^4.5.4
-        version: 4.5.4(rollup@4.46.2)(typescript@5.8.3)(vite@7.1.1)
+        version: 4.5.4(@types/node@24.2.1)(rollup@4.46.2)(typescript@5.8.3)(vite@7.1.1(@types/node@24.2.1))
 
   packages/vite-plugin:
     dependencies:
@@ -81,10 +96,10 @@ importers:
     devDependencies:
       vite:
         specifier: ^7.0.0
-        version: 7.1.1
+        version: 7.1.1(@types/node@24.2.1)
       vite-plugin-dts:
         specifier: ^4.5.4
-        version: 4.5.4(rollup@4.46.2)(typescript@5.8.3)(vite@7.1.1)
+        version: 4.5.4(@types/node@24.2.1)(rollup@4.46.2)(typescript@5.8.3)(vite@7.1.1(@types/node@24.2.1))
 
 packages:
 
@@ -589,6 +604,9 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  '@types/node@24.2.1':
+    resolution: {integrity: sha512-DRh5K+ka5eJic8CjH7td8QpYEV6Zo10gfRkjHCO3weqZHWDtAaSTFtl4+VMqOJ4N5jcuhZ9/l+yy8rVgw7BQeQ==}
 
   '@types/react-dom@19.1.7':
     resolution: {integrity: sha512-i5ZzwYpqjmrKenzkoLM2Ibzt6mAsM7pxB6BCIouEVVmgiqaMj1TjaK7hnA36hbW5aZv20kx7Lw6hWzPWg0Rurw==}
@@ -1234,6 +1252,10 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
+  rollup-plugin-analyzer@4.0.0:
+    resolution: {integrity: sha512-LL9GEt3bkXp6Wa19SNR5MWcvHNMvuTFYg+eYBZN2OIFhSWN+pEJUQXEKu5BsOeABob3x9PDaLKW7w5iOJnsESQ==}
+    engines: {node: '>=8.0.0'}
+
   rollup@4.46.2:
     resolution: {integrity: sha512-WMmLFI+Boh6xbop+OAGo9cQ3OgX9MIg7xOQjn+pTCwOkk+FNDAeAemXkJ3HzDJrVXleLOFVa1ipuc1AmEx1Dwg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
@@ -1336,6 +1358,9 @@ packages:
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
+  undici-types@7.10.0:
+    resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
+
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
@@ -1348,6 +1373,10 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  vite-bundle-analyzer@1.2.0:
+    resolution: {integrity: sha512-RYvfTw06KVw5rOgdBvpCYF49IlXSRs0/2ED36uDK5l0Y/hW+AUMSFQba7jyPflZkDuBlhHl0TuMpl9UT3lmqdg==}
+    hasBin: true
 
   vite-plugin-dts@4.5.4:
     resolution: {integrity: sha512-d4sOM8M/8z7vRXHHq/ebbblfaxENjogAAekcfcDCCwAyvGqnPrc7f4NZbvItS+g4WTgerW0xDwSz5qz11JT3vg==}
@@ -1694,23 +1723,23 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.4
 
-  '@microsoft/api-extractor-model@7.30.7':
+  '@microsoft/api-extractor-model@7.30.7(@types/node@24.2.1)':
     dependencies:
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
-      '@rushstack/node-core-library': 5.14.0
+      '@rushstack/node-core-library': 5.14.0(@types/node@24.2.1)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.52.10':
+  '@microsoft/api-extractor@7.52.10(@types/node@24.2.1)':
     dependencies:
-      '@microsoft/api-extractor-model': 7.30.7
+      '@microsoft/api-extractor-model': 7.30.7(@types/node@24.2.1)
       '@microsoft/tsdoc': 0.15.1
       '@microsoft/tsdoc-config': 0.17.1
-      '@rushstack/node-core-library': 5.14.0
+      '@rushstack/node-core-library': 5.14.0(@types/node@24.2.1)
       '@rushstack/rig-package': 0.5.3
-      '@rushstack/terminal': 0.15.4
-      '@rushstack/ts-command-line': 5.0.2
+      '@rushstack/terminal': 0.15.4(@types/node@24.2.1)
+      '@rushstack/ts-command-line': 5.0.2(@types/node@24.2.1)
       lodash: 4.17.21
       minimatch: 10.0.3
       resolve: 1.22.10
@@ -1811,7 +1840,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.46.2':
     optional: true
 
-  '@rushstack/node-core-library@5.14.0':
+  '@rushstack/node-core-library@5.14.0(@types/node@24.2.1)':
     dependencies:
       ajv: 8.13.0
       ajv-draft-04: 1.0.0(ajv@8.13.0)
@@ -1821,20 +1850,24 @@ snapshots:
       jju: 1.4.0
       resolve: 1.22.10
       semver: 7.5.4
+    optionalDependencies:
+      '@types/node': 24.2.1
 
   '@rushstack/rig-package@0.5.3':
     dependencies:
       resolve: 1.22.10
       strip-json-comments: 3.1.1
 
-  '@rushstack/terminal@0.15.4':
+  '@rushstack/terminal@0.15.4(@types/node@24.2.1)':
     dependencies:
-      '@rushstack/node-core-library': 5.14.0
+      '@rushstack/node-core-library': 5.14.0(@types/node@24.2.1)
       supports-color: 8.1.1
+    optionalDependencies:
+      '@types/node': 24.2.1
 
-  '@rushstack/ts-command-line@5.0.2':
+  '@rushstack/ts-command-line@5.0.2(@types/node@24.2.1)':
     dependencies:
-      '@rushstack/terminal': 0.15.4
+      '@rushstack/terminal': 0.15.4(@types/node@24.2.1)
       '@types/argparse': 1.0.38
       argparse: 1.0.10
       string-argv: 0.3.2
@@ -1867,6 +1900,10 @@ snapshots:
   '@types/estree@1.0.8': {}
 
   '@types/json-schema@7.0.15': {}
+
+  '@types/node@24.2.1':
+    dependencies:
+      undici-types: 7.10.0
 
   '@types/react-dom@19.1.7(@types/react@19.1.9)':
     dependencies:
@@ -1969,7 +2006,7 @@ snapshots:
       '@typescript-eslint/types': 8.39.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitejs/plugin-react@4.7.0(vite@7.1.1)':
+  '@vitejs/plugin-react@4.7.0(vite@7.1.1(@types/node@24.2.1))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.0)
@@ -1977,7 +2014,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.1.1
+      vite: 7.1.1(@types/node@24.2.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2543,6 +2580,8 @@ snapshots:
 
   reusify@1.1.0: {}
 
+  rollup-plugin-analyzer@4.0.0: {}
+
   rollup@4.46.2:
     dependencies:
       '@types/estree': 1.0.8
@@ -2643,6 +2682,8 @@ snapshots:
 
   ufo@1.6.1: {}
 
+  undici-types@7.10.0: {}
+
   universalify@2.0.1: {}
 
   update-browserslist-db@1.1.3(browserslist@4.25.1):
@@ -2655,9 +2696,11 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite-plugin-dts@4.5.4(rollup@4.46.2)(typescript@5.8.3)(vite@7.1.1):
+  vite-bundle-analyzer@1.2.0: {}
+
+  vite-plugin-dts@4.5.4(@types/node@24.2.1)(rollup@4.46.2)(typescript@5.8.3)(vite@7.1.1(@types/node@24.2.1)):
     dependencies:
-      '@microsoft/api-extractor': 7.52.10
+      '@microsoft/api-extractor': 7.52.10(@types/node@24.2.1)
       '@rollup/pluginutils': 5.2.0(rollup@4.46.2)
       '@volar/typescript': 2.4.23
       '@vue/language-core': 2.2.0(typescript@5.8.3)
@@ -2668,13 +2711,13 @@ snapshots:
       magic-string: 0.30.17
       typescript: 5.8.3
     optionalDependencies:
-      vite: 7.1.1
+      vite: 7.1.1(@types/node@24.2.1)
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite@7.1.1:
+  vite@7.1.1(@types/node@24.2.1):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -2683,6 +2726,7 @@ snapshots:
       rollup: 4.46.2
       tinyglobby: 0.2.14
     optionalDependencies:
+      '@types/node': 24.2.1
       fsevents: 2.3.3
 
   vscode-uri@3.1.0: {}
