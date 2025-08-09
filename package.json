@@ -1,12 +1,15 @@
 {
-  "name": "monorepo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "monorepo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"demo-react:dev": "pnpm --filter demo-react dev",
+		"demo-react:build": "pnpm --filter demo-react build",
+		"demo-react:preview": "pnpm --filter demo-react preview"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

@@ -1,0 +1,13 @@
+{
+	"name": "@monorepo/vite-plugin",
+	"version": "1.0.0",
+	"private": true,
+	"main": "index.ts",
+	"dependencies": {
+		"clsx": "2.1.1"
+	},
+	"devDependencies": {
+		"vite": "^7.0.0",
+		"vite-plugin-dts": "^4.5.4"
+	}
+}
