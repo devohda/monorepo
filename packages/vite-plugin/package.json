@@ -1,6 +1,6 @@
 {
-	"name": "@monorepo/vite-plugin",
-	"version": "1.0.0",
+	"name": "@devohda/design-system-vite-plugin",
+	"version": "0.0.0",
 	"private": true,
 	"main": "index.ts",
 	"dependencies": {

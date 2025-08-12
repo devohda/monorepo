@@ -10,8 +10,8 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@monorepo/react": "workspace:*",
-		"@monorepo/vite-plugin": "workspace:*",
+		"@devohda/design-system-react": "workspace:*",
+		"@devohda/design-system-vite-plugin": "workspace:*",
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1"
 	},

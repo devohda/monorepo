@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { cl } from "@monorepo/react";
-import { cx } from "@monorepo/vite-plugin";
+import { cl } from "@devohda/design-system-react";
+import { cx } from "@devohda/design-system-vite-plugin";
 
 function App() {
 	const [count, setCount] = useState(0);
