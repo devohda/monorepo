@@ -9,6 +9,10 @@
 			"path": "apps/demo-react"
 		},
 		{
+			"name": "apps/demo-next",
+			"path": "apps/demo-next"
+		},
+		{
 			"name": "packages/eslint",
 			"path": "packages/eslint"
 		}

@@ -14,7 +14,10 @@
 		"lint:fix": "pnpm -r --no-bail run lint --fix",
 		"demo-react:dev": "pnpm --filter demo-react dev",
 		"demo-react:build": "pnpm --filter demo-react build",
-		"demo-react:preview": "pnpm --filter demo-react preview"
+		"demo-react:preview": "pnpm --filter demo-react preview",
+		"demo-next:dev": "pnpm --filter demo-next dev",
+		"demo-next:build": "pnpm --filter demo-next build",
+		"demo-next:start": "pnpm --filter demo-next start"
 	},
 	"keywords": [],
 	"author": "",
