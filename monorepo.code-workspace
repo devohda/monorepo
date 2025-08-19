@@ -15,6 +15,10 @@
 		{
 			"name": "packages/eslint",
 			"path": "packages/eslint"
+		},
+		{
+			"name": "packages/react",
+			"path": "packages/react"
 		}
 	],
 	"settings": {

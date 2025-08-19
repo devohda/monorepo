@@ -17,7 +17,8 @@
 		"demo-react:preview": "pnpm --filter demo-react preview",
 		"demo-next:dev": "pnpm --filter demo-next dev",
 		"demo-next:build": "pnpm --filter demo-next build",
-		"demo-next:start": "pnpm --filter demo-next start"
+		"demo-next:start": "pnpm --filter demo-next start",
+		"design-system:build": "pnpm --filter design-system build"
 	},
 	"keywords": [],
 	"author": "",

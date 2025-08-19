@@ -4,4 +4,7 @@ packages:
   - packages/eslint/*
 
 ignoredBuiltDependencies:
+  - '@tailwindcss/oxide'
   - esbuild
+  - sharp
+  - unrs-resolver

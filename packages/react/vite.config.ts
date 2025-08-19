@@ -20,8 +20,9 @@ export default defineConfig({
 		lib: {
 			entry: globbySync(["src/**/index.ts"]),
 		},
-		outDir: "lib",
+		outDir: "dist",
 		rollupOptions: {
+			input: "./index.ts",
 			logLevel: "silent",
 			external: [
 				...Object.keys(pkg.dependencies ?? {}),
