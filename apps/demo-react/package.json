@@ -14,7 +14,8 @@
 		"@devohda/design-system": "workspace:*",
 		"@devohda/design-system-vite-plugin": "workspace:*",
 		"react": "^19.1.1",
-		"react-dom": "^19.1.1"
+		"react-dom": "^19.1.1",
+		"zustand": "^5.0.8"
 	},
 	"devDependencies": {
 		"@devohda/eslint-config-react": "workspace:*",

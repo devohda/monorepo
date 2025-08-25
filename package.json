@@ -12,13 +12,9 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "pnpm -r --no-bail run lint",
 		"lint:fix": "pnpm -r --no-bail run lint --fix",
-		"demo-react:dev": "pnpm --filter demo-react dev",
-		"demo-react:build": "pnpm --filter demo-react build",
-		"demo-react:preview": "pnpm --filter demo-react preview",
-		"demo-next:dev": "pnpm --filter demo-next dev",
-		"demo-next:build": "pnpm --filter demo-next build",
-		"demo-next:start": "pnpm --filter demo-next start",
-		"design-system:build": "pnpm --filter design-system build"
+		"demo-react": "pnpm --filter demo-react",
+		"demo-next": "pnpm --filter demo-next",
+		"design-system": "pnpm --filter design-system"
 	},
 	"keywords": [],
 	"author": "",
