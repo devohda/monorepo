@@ -9,6 +9,9 @@
 		"packages/eslint/*"
 	],
 	"scripts": {
+		"dev": "turbo",
+		"build": "turbo build",
+		"clean": "turbo clean",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "turbo --filter=packages/eslint run lint",
 		"lint:fix": "turbo --filter=packages/eslint run lint --fix",
