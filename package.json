@@ -10,11 +10,11 @@
 	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "pnpm -r --no-bail run lint",
-		"lint:fix": "pnpm -r --no-bail run lint --fix",
-		"demo-react": "pnpm --filter demo-react",
-		"demo-next": "pnpm --filter demo-next",
-		"design-system": "pnpm --filter design-system"
+		"lint": "turbo --filter=packages/eslint run lint",
+		"lint:fix": "turbo --filter=packages/eslint run lint --fix",
+		"demo-react": "turbo --filter @devohda/demo-react",
+		"demo-next": "turbo --filter @devohda/demo-next",
+		"design-system": "turbo --filter @devohda/design-system"
 	},
 	"keywords": [],
 	"author": "",
@@ -22,5 +22,9 @@
 	"volta": {
 		"node": "22.16.0",
 		"pnpm": "10.15.0"
+	},
+	"packageManager": "pnpm@10.15.0",
+	"devDependencies": {
+		"turbo": "^2.5.6"
 	}
 }
