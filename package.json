@@ -6,7 +6,8 @@
 	"workspaces": [
 		"apps/*",
 		"packages/*",
-		"packages/eslint/*"
+		"packages/eslint/*",
+		"packages/design-system/*"
 	],
 	"scripts": {
 		"dev": "turbo",

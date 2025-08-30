@@ -1,4 +1,4 @@
-import { Button } from "@devohda/design-system";
+import { Button } from "../../../packages/design-system/dist";
 import {
   getDummyStoreCount,
   getDummyStoreIncrement,

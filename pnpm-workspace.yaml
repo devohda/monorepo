@@ -2,9 +2,10 @@ packages:
   - apps/*
   - packages/*
   - packages/eslint/*
+  - packages/design-system/*
 
 ignoredBuiltDependencies:
-  - '@tailwindcss/oxide'
+  - "@tailwindcss/oxide"
   - esbuild
   - sharp
   - unrs-resolver
