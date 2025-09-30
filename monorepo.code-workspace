@@ -17,8 +17,8 @@
 			"path": "packages/eslint"
 		},
 		{
-			"name": "packages/react",
-			"path": "packages/react"
+			"name": "packages/design-system",
+			"path": "packages/design-system"
 		}
 	],
 	"settings": {

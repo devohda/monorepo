@@ -1,17 +1,18 @@
 {
 	"$schema": "https://turborepo.com/schema.json",
+	"globalEnv": ["MONOREPO_DESIGN_SYSTEM_GITHUB_TOKEN"],
 	"tasks": {
 		"build": {
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],
-			"outputs": ["dist/**"],
-			"dependsOn": ["^build"]
+			"outputs": ["dist/**"]
 		},
 		"lint": {
-			"dependsOn": ["^lint"]
+			"cache": false
 		},
 		"dev": {
 			"cache": false,
-			"persistent": true
+			"persistent": true,
+			"dependsOn": ["^build"]
 		},
 		"clean": {
 			"cache": false
