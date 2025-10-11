@@ -19,6 +19,10 @@
 		{
 			"name": "packages/design-system",
 			"path": "packages/design-system"
+		},
+		{
+			"name": "packages/typescript",
+			"path": "packages/typescript"
 		}
 	],
 	"settings": {

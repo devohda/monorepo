@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import { analyzer } from "vite-bundle-analyzer";
 // import rollupAnalyzer from "rollup-plugin-analyzer";
 import react from "@vitejs/plugin-react";
 // import { writeFileSync } from "fs";
@@ -35,5 +34,5 @@ export default defineConfig({
 			],
 		},
 	},
-	plugins: [react(), analyzer({})],
+	plugins: [react()],
 });

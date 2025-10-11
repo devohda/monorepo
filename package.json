@@ -18,7 +18,8 @@
 		"lint:fix": "turbo --filter=packages/eslint run lint --fix",
 		"demo-react": "turbo --filter @devohda/demo-react",
 		"demo-next": "turbo --filter @devohda/demo-next",
-		"design-system": "turbo --filter @devohda/design-system"
+		"design-system-react": "turbo --filter @devohda/design-system-react",
+		"design-system-css": "turbo --filter @devohda/design-system-css"
 	},
 	"keywords": [],
 	"author": "",
