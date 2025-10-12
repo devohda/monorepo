@@ -1,4 +1,4 @@
 {
-	"extends": "@devohda/typescript/tsconfig.react.json",
+	"extends": "@devohda/tsconfig/tsconfig.react.json",
 	"include": ["**/*.ts", "**/*.tsx"]
 }

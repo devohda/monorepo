@@ -6,12 +6,12 @@
 	"main": "index.ts",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc -b && vite build",
+		"build": "tsc --noEmit && vite build",
 		"lint": "eslint . --config ./eslint.config.mts",
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@devohda/design-system": "workspace:*",
+		"@devohda/design-system-react": "workspace:*",
 		"@devohda/design-system-vite-plugin": "workspace:*",
 		"react": "^19.1.1",
 		"react-dom": "^19.1.1",
@@ -20,7 +20,7 @@
 	"devDependencies": {
 		"@devohda/eslint-config-react": "workspace:*",
 		"@devohda/eslint-config-typescript": "workspace:*",
-		"@devohda/typescript": "workspace:*",
+		"@devohda/tsconfig": "workspace:*",
 		"@types/node": "^24.2.1",
 		"@types/react": "^19.1.9",
 		"@types/react-dom": "^19.1.7",

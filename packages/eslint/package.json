@@ -8,7 +8,7 @@
 		"lint:fix": "eslint . --fix"
 	},
 	"devDependencies": {
-		"@devohda/typescript": "workspace:*",
+		"@devohda/tsconfig": "workspace:*",
 		"@eslint/js": "^9.33.0",
 		"eslint": "^9.33.0",
 		"@types/node": "^24.2.1"

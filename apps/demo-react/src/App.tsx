@@ -1,4 +1,4 @@
-import { Button } from "@devohda/design-system/react";
+import { Button } from "@devohda/design-system-react";
 import {
 	getDummyStoreCount,
 	getDummyStoreIncrement,

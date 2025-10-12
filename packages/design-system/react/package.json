@@ -18,7 +18,7 @@
 		"globby": "^14.1.0"
 	},
 	"devDependencies": {
-		"@devohda/typescript": "workspace:*",
+		"@devohda/tsconfig": "workspace:*",
 		"@eslint/js": "^9.32.0",
 		"@types/node": "^24.2.1",
 		"@types/react": "^19.1.9",
