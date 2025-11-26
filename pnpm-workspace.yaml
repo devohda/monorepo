@@ -9,3 +9,8 @@ ignoredBuiltDependencies:
   - esbuild
   - sharp
   - unrs-resolver
+
+catalog:
+  typescript: ^5.9.3
+  eslint: ^9.39.1
+  prettier: ^3.6.2

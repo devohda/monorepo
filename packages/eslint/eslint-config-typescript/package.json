@@ -8,8 +8,8 @@
 		"typescript-eslint": "^8.39.0"
 	},
 	"peerDependencies": {
-		"eslint": "^9.33.0",
-		"typescript": "~5.8.3",
+		"eslint": "catalog:",
+		"typescript": "catalog:",
 		"typescript-eslint": "^8.39.0"
 	}
 }
