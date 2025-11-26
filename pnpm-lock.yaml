@@ -224,7 +224,11 @@ importers:
         specifier: ^8.39.0
         version: 8.39.0(eslint@9.39.1(jiti@2.5.1))(typescript@5.9.3)
 
-  packages/typescript: {}
+  packages/typescript:
+    dependencies:
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
 
   packages/vite-plugin:
     dependencies:
