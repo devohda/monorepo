@@ -11,7 +11,7 @@
 		}
 	},
 	"devDependencies": {
-		"@devohda/tsconfig": "workspace:*",
+		"@devohda/ts-config": "workspace:*",
 		"vite": "^7.1.3"
 	}
 }

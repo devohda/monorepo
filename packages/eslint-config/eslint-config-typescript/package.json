@@ -10,6 +10,6 @@
 	"peerDependencies": {
 		"eslint": "catalog:",
 		"typescript": "catalog:",
-		"typescript-eslint": "^8.39.0"
+		"typescript-eslint": "catalog:"
 	}
 }

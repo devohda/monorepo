@@ -23,7 +23,7 @@
 	"devDependencies": {
 		"@devohda/eslint-config-react": "workspace:*",
 		"@devohda/eslint-config-typescript": "workspace:*",
-		"@devohda/tsconfig": "workspace:*",
+		"@devohda/ts-config": "workspace:*",
 		"@types/node": "^24.2.1",
 		"@types/react": "^19.1.9",
 		"@types/react-dom": "^19.1.7",

@@ -1,5 +1,5 @@
 {
-	"extends": "@devohda/tsconfig/tsconfig.app.json",
+	"extends": "@devohda/ts-config/tsconfig.app.json",
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
