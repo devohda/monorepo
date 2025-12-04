@@ -4,13 +4,13 @@ packages:
   - packages/eslint-config/*
   - packages/design-system/*
 
-ignoredBuiltDependencies:
-  - "@tailwindcss/oxide"
-  - esbuild
-  - sharp
-  - unrs-resolver
-
 catalog:
   eslint: ^9.39.1
   prettier: ^3.6.2
-  typescript: ^5.9.3
+  typescript: 5.9.3
+
+ignoredBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - esbuild
+  - sharp
+  - unrs-resolver

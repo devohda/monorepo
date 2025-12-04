@@ -10,7 +10,7 @@ catalogs:
       specifier: ^9.39.1
       version: 9.39.1
     typescript:
-      specifier: ^5.9.3
+      specifier: 5.9.3
       version: 5.9.3
 
 importers:
@@ -20,6 +20,9 @@ importers:
       turbo:
         specifier: ^2.6.1
         version: 2.6.1
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
 
   apps/demo-next:
     dependencies:
